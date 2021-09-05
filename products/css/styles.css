@@ -147,7 +147,15 @@ html body {
     height: 336px;
     overflow: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 2s ease-out 100ms
 }
+
+.block-item:hover 
+{
+    background-color: rgba(224, 144, 186, 0.23);
+
+}
+
 
 .dont_know
 {
@@ -228,12 +236,13 @@ html body footer
     margin: auto;
     height: 89px;
     border-color: #952FB9;
-    
-}
 
+    animation-duration: 2s;
+}
 
 #footer_logo
 {
+    align-self: flex-end;
     position: absolute;
     width: 76px;
     height: 89px;
@@ -242,6 +251,8 @@ html body footer
 
     background: url("images/car_protector_logo.png");
 }
+
+
 
 #footer_navigation_icon
 {
@@ -315,6 +326,13 @@ html body footer
     background: url("images/facebook.png")
 }
 
+#footer_icon_fb:hover
+{
+    background-color: rgba(15, 42, 128, 0.86);
+
+    transform: scale(1.1);
+}
+
 #footer_icon_inst
 {
     position: absolute;
@@ -326,6 +344,13 @@ html body footer
     opacity: 0.5;
 }
 
+#footer_icon_inst:hover
+{
+    background-color: rgba(173, 15, 187, 0.86);
+
+    transform: scale(1.1);
+}
+
 #footer_icon_mail
 {
     position: absolute;
@@ -335,4 +360,11 @@ html body footer
     top: 26px;
     background: url("images/gmail.png");
     opacity: 0.5;
+    transition: 0.2s;
+}
+#footer_icon_mail:hover
+{
+    background-color: rgba(135, 8, 8, 0.86);
+
+    transform: scale(1.1);
 }
